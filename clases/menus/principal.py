@@ -8,6 +8,7 @@ class Principal(object):
         print("---- MENU PRINCIPAL ----")
         print("1. Basicos")
         print("2. Ciclos")
+        print("3. Condicionales ")
         #Pendiente de agregar opciones para cada tema
         print("5. Salir")
 

@@ -16,12 +16,3 @@ class Sumatoria:
   def imprimir_resultado(self):
     print(f'n = {self.n}, serie = {self.calcular_sumatoria()}')
 
-# Caso de prueba 1
-sumatoria1 = Sumatoria(5)
-print('Caso de prueba 1:')
-sumatoria1.imprimir_resultado()
-
-# Caso de prueba 2
-sumatoria2 = Sumatoria(8)
-print('\nCaso de prueba 2:')
-sumatoria2.imprimir_resultado()

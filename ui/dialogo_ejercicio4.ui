@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">/* --- Aplicar fuente global para que todo sea legible y moderno --- */
+QWidget {
+    font-family: &quot;Segoe UI&quot;, &quot;Helvetica Neue&quot;, &quot;Arial&quot;, sans-serif;
+    font-size: 13px; /* Tamaño base cómodo */
+    color: #2D3748; /* Gris oscuro para el texto, evita fatiga visual */
+}
+
+/* --- Fondo de la ventana --- */
+QMainWindow {
+    background-color: #FAFAFA; /* Un blanco suave y profesional */
+}
+
+/* --- Etiquetas (Labels) --- */
+QLabel {
+    /* Mantiene tamaño, solo ajusta color y grosor ligero */
+    font-weight: 500;
+}
+
+/* --- Destacar específicamente el resultado --- */
+#lbl_resultado {
+    /* Aquí forzamos que se vea claro y grande */
+    font-size: 16px;
+    font-weight: bold;
+    color: #1A365D; /* Azul marino profundo */
+    background-color: #EDF2F7; /* Un fondo gris azulado muy suave para resaltarlo */
+    border-radius: 6px; /* Borde sutilmente redondeado */
+    padding: 10px; /* Suficiente espacio alrededor del texto */
+    border: 1px solid #E2E8F0; /* Borde fino para darle forma */
+}
+
+/* --- Cajas de entrada de texto (LineEdits) --- */
+QLineEdit {
+    background-color: #FFFFFF;
+    border: 1px solid #CBD5E1; /* Borde gris claro */
+    border-radius: 5px; /* Bordes redondeados sutiles */
+    color: #334155;
+    /* No tocamos padding para que respete el tamaño por defecto */
+}
+
+/* Estado de foco (cuando haces clic para escribir) */
+QLineEdit:focus {
+    border: 2px solid #3B82F6; /* Borde azul vibrante */
+    background-color: #F8FAFC;
+}
+
+/* --- Botón de Calcular --- */
+QPushButton {
+    background-color: #2563EB; /* Azul profesional corporativo */
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px; /* Bordes redondeados sutiles */
+    /* No tocamos padding ni min-height */
+}
+
+/* Efectos al interactuar con el botón */
+QPushButton:hover {
+    background-color: #1D4ED8; /* Azul un poco más oscuro al pasar el mouse */
+}
+
+QPushButton:pressed {
+    background-color: #1E40AF; /* Azul aún más oscuro al presionar */
+    border: 1px solid #1E40AF;
+}</string>
+  </property>
+  <widget class="QLabel" name="txt_x1">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>20</y>
+     <width>55</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>x1: </string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="txt_y1">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>60</y>
+     <width>55</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>y1:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="txt_x2">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>100</y>
+     <width>55</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>x2:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="txt_y2">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>150</y>
+     <width>55</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>y2:</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit">
+   <property name="geometry">
+    <rect>
+     <x>110</x>
+     <y>10</y>
+     <width>113</width>
+     <height>31</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_2">
+   <property name="geometry">
+    <rect>
+     <x>110</x>
+     <y>51</y>
+     <width>113</width>
+     <height>31</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_3">
+   <property name="geometry">
+    <rect>
+     <x>110</x>
+     <y>90</y>
+     <width>113</width>
+     <height>31</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_4">
+   <property name="geometry">
+    <rect>
+     <x>110</x>
+     <y>140</y>
+     <width>113</width>
+     <height>31</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbl_resultado">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>190</y>
+     <width>151</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Segoe UI,Helvetica Neue,Arial,sans-serif</family>
+     <pointsize>-1</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>...</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_calcular">
+   <property name="geometry">
+    <rect>
+     <x>260</x>
+     <y>70</y>
+     <width>93</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>CALCULAR</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

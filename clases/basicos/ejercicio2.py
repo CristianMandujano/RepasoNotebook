@@ -15,5 +15,3 @@ class Coordenadas:
     def calcular_distancia(self):
       return ((self.x2 - self.x1)**2 + (self.y2 - self.y1)**2)**0.5
       
-    def imprimir_distancia(self):
-      print(f'd = {self.calcular_distancia()}')

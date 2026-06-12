@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget"/>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuMen_Principal">
+    <property name="title">
+     <string>Repaso</string>
+    </property>
+    <widget class="QMenu" name="menuClases">
+     <property name="title">
+      <string>Clases</string>
+     </property>
+     <widget class="QMenu" name="menuMenus">
+      <property name="title">
+       <string>Menus</string>
+      </property>
+      <addaction name="actionMenu_Basicos"/>
+      <addaction name="actionMenu_ciclos"/>
+      <addaction name="actionMenu_condicionales"/>
+      <addaction name="actionMenu_principal"/>
+     </widget>
+     <widget class="QMenu" name="menuBasicos">
+      <property name="title">
+       <string>Basicos</string>
+      </property>
+      <addaction name="action_ejercicio1"/>
+      <addaction name="action_ejercicio2"/>
+      <addaction name="action_ejercicio3"/>
+     </widget>
+     <widget class="QMenu" name="menuCiclos">
+      <property name="title">
+       <string>Ciclos</string>
+      </property>
+      <addaction name="actionEjercicio_5"/>
+      <addaction name="action_ejercicio6"/>
+      <addaction name="actionEjercicio_7"/>
+      <addaction name="actionEjercicio_8"/>
+      <addaction name="actionEjercicio_9"/>
+      <addaction name="actionEjerccicio_10"/>
+      <addaction name="actionEjercicio_11"/>
+      <addaction name="actionEjercicio_12"/>
+      <addaction name="actionEjercicio_13"/>
+      <addaction name="actionEjercicio_15"/>
+      <addaction name="actionEjercicio_16"/>
+      <addaction name="actionEjercicio_20"/>
+      <addaction name="actionEjercicio_21"/>
+      <addaction name="actionEjercicio_22"/>
+      <addaction name="actionEjercicio_23"/>
+      <addaction name="actionEjercicio_25"/>
+     </widget>
+     <widget class="QMenu" name="menuCondicionales">
+      <property name="title">
+       <string>Condicionales</string>
+      </property>
+      <addaction name="actionEjercicio_4"/>
+      <addaction name="actionEjercicio_14"/>
+      <addaction name="actionEjercicio_17"/>
+      <addaction name="actionEjercicio_18"/>
+      <addaction name="actionEjercicio_19"/>
+      <addaction name="actionEjercicio_24"/>
+     </widget>
+     <addaction name="menuBasicos"/>
+     <addaction name="menuCiclos"/>
+     <addaction name="menuCondicionales"/>
+     <addaction name="separator"/>
+     <addaction name="menuMenus"/>
+    </widget>
+    <addaction name="menuClases"/>
+   </widget>
+   <addaction name="menuMen_Principal"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionMenu_Basicos">
+   <property name="text">
+    <string>Menu Basicos</string>
+   </property>
+  </action>
+  <action name="actionMenu_ciclos">
+   <property name="text">
+    <string>Menu ciclos</string>
+   </property>
+  </action>
+  <action name="actionMenu_condicionales">
+   <property name="text">
+    <string>Menu condicionales</string>
+   </property>
+  </action>
+  <action name="actionMenu_principal">
+   <property name="text">
+    <string>Menu principal</string>
+   </property>
+  </action>
+  <action name="action_ejercicio1">
+   <property name="text">
+    <string>Ejercicio 1 </string>
+   </property>
+  </action>
+  <action name="action_ejercicio2">
+   <property name="text">
+    <string>Ejercicio 2 </string>
+   </property>
+  </action>
+  <action name="action_ejercicio3">
+   <property name="text">
+    <string>Ejercicio 3 </string>
+   </property>
+  </action>
+  <action name="actionEjercicio_5">
+   <property name="text">
+    <string>Ejercicio 5</string>
+   </property>
+  </action>
+  <action name="actionEjercicio_4">
+   <property name="text">
+    <string>Ejercicio 4 </string>
+   </property>
+  </action>
+  <action name="actionEjercicio_14">
+   <property name="text">
+    <string>Ejercicio 14 </string>
+   </property>
+  </action>
+  <action name="actionEjercicio_17">
+   <property name="text">
+    <string>Ejercicio 17 </string>
+   </property>
+  </action>
+  <action name="actionEjercicio_18">
+   <property name="text">
+    <string>Ejercicio 18 </string>
+   </property>
+  </action>
+  <action name="actionEjercicio_19">
+   <property name="text">
+    <string>Ejercicio 20</string>
+   </property>
+  </action>
+  <action name="actionEjercicio_24">
+   <property name="text">
+    <string>Ejercicio 24</string>
+   </property>
+  </action>
+  <action name="action_ejercicio6">
+   <property name="text">
+    <string>Ejercicion 6</string>
+   </property>
+  </action>
+  <action name="actionEjercicio_7">
+   <property name="text">
+    <string>Ejercicio 7</string>
+   </property>
+  </action>
+  <action name="actionEjercicio_8">
+   <property name="text">
+    <string>Ejercicio 8 </string>
+   </property>
+  </action>
+  <action name="actionEjercicio_9">
+   <property name="text">
+    <string>Ejercicio 9 </string>
+   </property>
+  </action>
+  <action name="actionEjerccicio_10">
+   <property name="text">
+    <string>Ejerccicio 10 </string>
+   </property>
+  </action>
+  <action name="actionEjercicio_11">
+   <property name="text">
+    <string>Ejercicio 11 </string>
+   </property>
+  </action>
+  <action name="actionEjercicio_12">
+   <property name="text">
+    <string>Ejercicio 12 </string>
+   </property>
+  </action>
+  <action name="actionEjercicio_13">
+   <property name="text">
+    <string>Ejercicio 13 </string>
+   </property>
+  </action>
+  <action name="actionEjercicio_15">
+   <property name="text">
+    <string>Ejercicio 15 </string>
+   </property>
+  </action>
+  <action name="actionEjercicio_16">
+   <property name="text">
+    <string>Ejercicio 16 </string>
+   </property>
+  </action>
+  <action name="actionEjercicio_20">
+   <property name="text">
+    <string>Ejercicio 19</string>
+   </property>
+  </action>
+  <action name="actionEjercicio_21">
+   <property name="text">
+    <string>Ejercicio 21 </string>
+   </property>
+  </action>
+  <action name="actionEjercicio_22">
+   <property name="text">
+    <string>Ejercicio 22 </string>
+   </property>
+  </action>
+  <action name="actionEjercicio_23">
+   <property name="text">
+    <string>Ejercicio 23 </string>
+   </property>
+  </action>
+  <action name="actionEjercicio_25">
+   <property name="text">
+    <string>Ejercicio 25 </string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

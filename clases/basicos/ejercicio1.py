@@ -14,5 +14,3 @@ class Recta:
   def calcular_pendiente(self):
     return (self.y2 - self.y1) / (self.x2 - self.x1)
 
-  def imprimir_pendiente(self):
-    print(f'm = {self.calcular_pendiente()}')

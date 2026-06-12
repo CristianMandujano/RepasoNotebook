@@ -1,7 +1,9 @@
 from clases.basicos.ejercicio1 import Recta
 from clases.basicos.ejercicio2 import Coordenadas
+from clases.basicos.ejercicio3 import Distribucion 
+
 class Basicos(object):
-    def _init_(self):
+    def __init__(self):  
         self.opcion = 0
 
     def mostrar_menu_basicos(self):
@@ -25,11 +27,15 @@ class Basicos(object):
                 puntos.calcularDistancia()
                 puntos.imprimirDistancia()
             case 3:
-                pass
+                calculadora = Distribucion(0, 0, 0)
+                calculadora.leer_datos() 
+                
+                resultado = calculadora.calcular_fx()
+                print(f"fx={resultado}")
             case 4:
-                pass
+                print("Saliendo al menú principal")
 
-    def ejecutar (self):
+    def ejecutar(self):
         while self.opcion != 4:
             self.mostrar_menu_basicos()
             self.leer_ejecutar_opcion()

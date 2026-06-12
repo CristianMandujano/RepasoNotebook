@@ -14,11 +14,3 @@ class AsignadorGrupos:
                 return "A"
             else:
                 return "B"
-
-nom = input("¿Cuál es tu nombre? ")
-sex = input("¿Cuál es tu sexo (M o F)? ")
-
-sistema = AsignadorGrupos(nom, sex)
-grupo_final = sistema.determinar_grupo()
-
-print(f"Tu grupo es {grupo_final}")

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">/* Estilo General de la Ventana */
+QMainWindow, QWidget {
+    background-color: #f8f9fa; /* Blanco suave/grisáceo muy claro */
+    font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, Arial, sans-serif;
+    font-size: 14px; /* Tamaño cómodo y perfectamente legible */
+    color: #212529; /* Gris oscuro elegante, evita el negro puro para no cansar la vista */
+}
+
+/* Títulos o Etiquetas principales (Labels) */
+QLabel {
+    color: #495057;
+    font-weight: 500;
+    padding: 4px;
+}
+
+/* Cajas de entrada de datos (SpinBox, LineEdit) */
+QSpinBox, QLineEdit {
+    background-color: #ffffff;
+    border: 1px solid #ced4da;
+    border-radius: 6px; /* Bordes ligeramente redondeados */
+    padding: 6px 12px;
+    font-size: 14px;
+    color: #212529;
+}
+
+/* Cuando el usuario hace clic en la caja de texto/número (Focus) */
+QSpinBox:focus, QLineEdit:focus {
+    border: 1px solid #4dabf7; /* Azul sutil elegante */
+    background-color: #f1f3f5;
+}
+
+/* Botón Elegante */
+QPushButton {
+    background-color: #74c0fc; /* Azul pastel claro y moderno */
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 14px;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 20px;
+}
+
+/* Efecto cuando pasas el mouse por encima del botón */
+QPushButton:hover {
+    background-color: #4dabf7; /* Un tono más oscuro al pasar el cursor */
+}
+
+/* Efecto cuando presionas el botón */
+QPushButton:pressed {
+    background-color: #339af0;
+}</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>14</x>
+     <y>25</y>
+     <width>81</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Frase:</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="txt_input_frase">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>31</y>
+     <width>113</width>
+     <height>31</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbl_resultado">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>140</y>
+     <width>361</width>
+     <height>131</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>...</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_calcular">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>20</y>
+     <width>131</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>CALCULAR</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
